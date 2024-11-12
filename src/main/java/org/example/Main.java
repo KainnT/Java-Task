@@ -216,11 +216,11 @@ public class Main {
 }
 
 class Movie {
-    private String title;
-    private int year;
-    private String genre;
-    private double rating;
-    private String overview;
+    private final String title;   // Marked as final
+    private final int year;       // Marked as final
+    private final String genre;   // Marked as final
+    private final double rating;  // Marked as final
+    private final String overview; // Marked as final
 
     public Movie(String title, int year, String genre, double rating, String overview) {
         this.title = title;
