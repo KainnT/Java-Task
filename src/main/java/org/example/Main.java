@@ -139,7 +139,7 @@ public class Main {
         while (true) {
             System.out.println("\nPagina " + currentPage + " de " + totalPages);
             movies.stream()
-                    .skip((currentPage - 1) * pageSize)
+                    .skip((long) (currentPage - 1) * pageSize)
                     .limit(pageSize)
                     .forEach(System.out::println);
 
@@ -180,7 +180,7 @@ public class Main {
     public static void searchMovieByTitle(List<Movie> movies, String title) {
         List<Movie> found = movies.stream()
                 .filter(movie -> movie.getTitle().toLowerCase().contains(title.toLowerCase()))
-                .collect(Collectors.toList());
+                .toList();
         if (found.isEmpty()) {
             System.out.println("No peliculas encontradas con el titulo: " + title);
         } else {
@@ -192,7 +192,7 @@ public class Main {
     public static void recommendMoviesByGenre(List<Movie> movies, String genre) {
         List<Movie> recommended = movies.stream()
                 .filter(movie -> movie.getGenre().toLowerCase().contains(genre.toLowerCase()))
-                .collect(Collectors.toList());
+                .toList();
         if (recommended.isEmpty()) {
             System.out.println("No peliculas encontradas en el genero: " + genre);
         } else {
@@ -205,7 +205,7 @@ public class Main {
         List<Movie> topRated = movies.stream()
                 .filter(movie -> movie.getRating() >= minRating)
                 .sorted(Comparator.comparingDouble(Movie::getRating).reversed())
-                .collect(Collectors.toList());
+                .toList();
         if (topRated.isEmpty()) {
             System.out.println("No peliculas encontradas con el rating >= " + minRating);
         } else {
@@ -246,9 +246,6 @@ class Movie {
         return rating;
     }
 
-    public String getOverview() {
-        return overview;
-    }
 
     @Override
     public String toString() {
