@@ -1,35 +1,43 @@
-# Tarea Técnica - Gestor de Películas en Java con CSV
+# Technical Task - Movie Manager in Java with CSV
 
-## Descripción
+## Description
 
-Este es un mini-proyecto creado como parte de una tarea técnica para una aplicación laboral. Es un programa basado en Java que demuestra el manejo de archivos CSV e 
-implementa conceptos clave de programación como entrada/salida de archivos, programación orientada a objetos y funcionalidades interactivas como búsqueda y recomendaciones.
+This is a mini-project created as part of a technical task for a job application. It is a Java-based program that demonstrates the handling of CSV files and implements key programming concepts such as file input/output, object-oriented programming, and interactive features like search and recommendations.
 
-El programa procesa un conjunto de datos de películas y proporciona las siguientes funcionalidades:
-- Buscar películas por título.
-- Recomendar películas basadas en el género.
-- Mostrar las películas mejor calificadas.
+The program processes a dataset of movies and provides the following functionalities:
+- Search for movies by title.
+- Recommend movies based on genre.
+- Display the top-rated movies.
 
-## Características
+## Features
 
-- Carga un archivo CSV que contiene datos de películas.
-- Proporciona las siguientes funcionalidades:
-  - Mostrar todas las películas.
-  - Buscar una película por su título.
-  - Recomendar películas por género.
-  - Recomendar películas mejor calificadas basadas en un criterio ingresado por el usuario.
-- Maneja filas inválidas o con formato incorrecto de manera segura.
+- Loads a CSV file containing movie data.
+- Provides the following functionalities:
+  - Display all movies.
+  - Search for a movie by its title.
+  - Recommend movies by genre.
+  - Recommend top-rated movies based on a criterion entered by the user.
+- Safely handles invalid or incorrectly formatted rows.
 
-## Requisitos Previos
+## Prerequisites
 
-Para ejecutar este proyecto necesitas:
+To run this project, you need:
 
-- **Java 17 o superior**.
-- **Maven** (para gestionar las dependencias).
-- **IntelliJ IDEA** o cualquier IDE de tu elección.
+- **Java 17 or higher**.
+- **Maven** (to manage dependencies).
+- **IntelliJ IDEA** or any IDE of your choice.
 
-## Configuración y Ejecución del Proyecto
+## Project Setup and Execution
 
-1. Clona el repositorio:
+1. Clone the repository:
    ```bash
    git clone https://github.com/KainnT/Java-Task-.git
+   ```
+---
+
+## **License**
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+Let me know if you'd like to adjust any sections or add specific examples!
