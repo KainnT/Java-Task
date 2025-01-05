@@ -1,8 +1,8 @@
-# Technical Task - Movie Manager in Java with CSV
+# Task - Movie Manager in Java with CSV
 
 ## Description
 
-This is a mini-project created as part of a technical task for a job application. It is a Java-based program that demonstrates the handling of CSV files and implements key programming concepts such as file input/output, object-oriented programming, and interactive features like search and recommendations.
+This is a mini-project created for a better understading of the language. It is a Java-based program that demonstrates the handling of CSV files and implements key programming concepts such as file input/output, object-oriented programming, and interactive features like search and recommendations.
 
 The program processes a dataset of movies and provides the following functionalities:
 - Search for movies by title.
